@@ -1,0 +1,9 @@
+{% extends 'main/overarching.html' %}
+
+{% block tit %}
+    {{ data.12.name }}
+{% endblock %}
+
+{% block specify_it %}
+<p><strong>Capacity:</strong> {{ data.12.data.Capacity }}<br><strong>Generation:</strong> {{ data.12.data.Generation }}<br><strong>Price:</strong> {{ data.12.data.Price }}</p>
+{% endblock %}

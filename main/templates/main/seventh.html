@@ -1,0 +1,10 @@
+{% extends 'main/overarching.html' %}
+
+{% block tit %}
+    {{ data.6.name }}
+{% endblock %}
+
+{% block specify_it %}
+<p><strong>Year:</strong> {{ data.6.data.year }} <br> <strong>Price:</strong> {{ data.6.data.price }}</p>
+<p><strong>CPU model:</strong> {{ data.6.data.CPU_model }} <br> <strong>Hard disk size:</strong> {{ data.6.data.Hard_disk_size }}</p>
+{% endblock %}

@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Parser task</title>
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+<body>
+    <h1>Items:</h1>
+    <h5>To find more information about the items click on the appropriate button name</h5>
+    <ul>
+        <a href="{% url 'first' %}" class="buttons">{{ data.0.id }}: {{ data.0.name }}</a>
+        <br>
+        <a href="{% url 'second' %}" class="buttons">{{ data.1.id }}: {{ data.1.name }}</a>
+        <br>
+        <a href="{% url 'third' %}" class="buttons">{{ data.2.id }}: {{ data.2.name }}</a>
+        <br>
+        <a href="{% url 'fourth' %}" class="buttons">{{ data.3.id }}: {{ data.3.name }}</a>
+        <br>
+        <a href="{% url 'fifth' %}" class="buttons">{{ data.4.id }}: {{ data.4.name }}</a>
+        <br>
+        <a href="{% url 'sixth' %}" class="buttons">{{ data.5.id }}: {{ data.5.name }}</a>
+        <br>
+        <a href="{% url 'seventh' %}" class="buttons">{{ data.6.id }}: {{ data.6.name }}</a>
+        <br>
+        <a href="{% url 'eighth' %}" class="buttons">{{ data.7.id }}: {{ data.7.name }}</a>
+        <br>
+        <a href="{% url 'ninth' %}" class="buttons">{{ data.8.id }}: {{ data.8.name }}</a>
+        <br>
+        <a href="{% url 'tenth' %}" class="buttons">{{ data.9.id }}: {{ data.9.name }}</a>
+        <br>
+        <a href="{% url 'eleventh' %}" class="buttons">{{ data.10.id }}: {{ data.10.name }}</a>
+        <br>
+        <a href="{% url 'twelfth' %}" class="buttons">{{ data.11.id }}: {{ data.11.name }}</a>
+        <br>
+        <a href="{% url 'thirtieth' %}" class="buttons">{{ data.12.id }}: {{ data.12.name }}</a>
+        <br>
+
+    </ul>
+</body>
+</html>

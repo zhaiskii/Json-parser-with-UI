@@ -1,0 +1,9 @@
+{% extends 'main/overarching.html' %}
+
+{% block tit %}
+    {{ data.10.name }}
+{% endblock %}
+
+{% block specify_it %}
+<p><strong>Capacity:</strong> {{ data.10.data.Capacity }}<br><strong>Screen size:</strong> {{ data.10.data.Screen_size }}</p>
+{% endblock %}

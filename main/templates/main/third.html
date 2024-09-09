@@ -1,0 +1,9 @@
+{% extends 'main/overarching.html' %}
+
+{% block tit %}
+    {{ data.2.name }}
+{% endblock %}
+
+{% block specify_it %}
+<p><strong>Color:</strong> {{ data.2.data.color }}<br><strong>Capacity:</strong> {{ data.2.data.capacity_GB }}</p>
+{% endblock %}
